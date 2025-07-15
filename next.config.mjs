@@ -3,7 +3,6 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
-  distDir: 'out',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -15,10 +14,9 @@ const nextConfig = {
   },
   assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   basePath: '',
-  // Ensure proper static export
   experimental: {
     optimizeCss: true,
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;

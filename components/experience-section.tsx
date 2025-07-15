@@ -71,13 +71,14 @@ export function ExperienceSection() {
     },
   ]
 
+
   return (
     <section id="experience" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Experience & Education</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            My professional journey and educational background that shaped my expertise in backend engineering.
+            My professional journey and educational background that shaped my expertise in backend engineering...
           </p>
         </div>
 
@@ -166,7 +167,7 @@ export function ExperienceSection() {
             </div>
 
             {/* Certifications */}
-            {/* <div className="mt-8">
+             <div className="mt-8">
               <h4 className="text-lg font-semibold mb-4">Certifications</h4>
               <div className="space-y-3">
                 <Card className="p-4">
@@ -182,7 +183,7 @@ export function ExperienceSection() {
                   <div className="text-xs text-muted-foreground">MongoDB Inc. • 2021</div>
                 </Card>
               </div>
-            </div> */}
+            </div> 
           </div>
         </div>
       </div>

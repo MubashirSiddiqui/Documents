@@ -2,54 +2,16 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code, Palette, Zap, Users } from "lucide-react"
+import { Code, Palette, Zap, Users, Shield, Bug, Gauge, Database } from "lucide-react"
 
 export function AboutSection() {
-  const skills = [
-    "PHP",
-    "Laravel",
-    "JavaScript",
-    "Node.js",
-    "TypeScript",
-    "NestJS",
-    "MySQL",
-    "MongoDB",
-    "Redis",
-    "Elasticsearch",
-    "AWS",
-    "Docker",
-  ]
-
-  const features = [
-    {
-      icon: Code,
-      title: "Backend Architecture",
-      description: "Designing scalable microservices and RESTful APIs that handle millions of requests efficiently.",
-    },
-    {
-      icon: Zap,
-      title: "Performance Optimization",
-      description: "Improving system performance by 30%+ through caching strategies and database optimization.",
-    },
-    {
-      icon: Palette,
-      title: "Payment Systems Integration",
-      description: "Integrating 10+ payment gateways and handling 35K+ daily transactions securely.",
-    },
-    {
-      icon: Users,
-      title: "Team Leadership",
-      description: "Mentoring junior developers and enhancing team productivity through best practices.",
-    },
-  ]
-
   return (
     <section id="about" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Passionate backend engineer creating innovative solutions that power millions of users worldwide.
+            Passionate about delivering exceptional software quality through innovative testing strategies and automation frameworks. I believe quality is not just about finding bugs, but preventing them.
           </p>
         </div>
 
@@ -57,65 +19,60 @@ export function AboutSection() {
           <div>
             <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Backend Engineer specializing in building scalable, cloud-native systems using Laravel, Node.js, and AWS.
-              Expert in API performance optimization and microservices architecture.
+              Started my career as a manual tester and evolved into a comprehensive QA engineer with expertise in automation, performance testing, and quality assurance processes. I've worked with startups to enterprise companies, helping them build robust testing frameworks and maintain high-quality standards.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Proven record of delivering resilient platforms for 20M+ users and optimizing backend systems through
-              caching, logging, and asynchronous processing. I'm passionate about mentoring junior developers and have
-              successfully guided 10+ team members, enhancing overall team productivity by 30%.
+              My approach combines technical expertise with strategic thinking, ensuring that quality is built into every stage of the development lifecycle. I'm passionate about mentoring junior testers and promoting a culture of quality within development teams.
             </p>
-            <div className="flex flex-wrap gap-2">
-              {skills.map((skill) => (
-                <Badge key={skill} variant="secondary" className="text-sm">
-                  {skill}
-                </Badge>
-              ))}
-            </div>
+
+            <h4 className="text-xl font-semibold mb-4">What I Bring:</h4>
+            <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-6">
+              <li>Comprehensive test strategy development</li>
+              <li>Advanced automation framework design</li>
+              <li>Performance and security testing expertise</li>
+              <li>CI/CD pipeline integration and optimization</li>
+            </ul>
           </div>
 
-          <div className="relative">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-square rounded-xl bg-gradient-to-br from-purple-600 to-pink-600 p-4 text-white">
-                <div className="text-center h-full flex flex-col justify-center">
-                  <div className="text-3xl mb-2">🚀</div>
-                  <p className="text-sm font-medium">High Performance</p>
-                </div>
-              </div>
-              <div className="aspect-square rounded-xl bg-gradient-to-br from-orange-500 to-red-500 p-4 text-white">
-                <div className="text-center h-full flex flex-col justify-center">
-                  <div className="text-3xl mb-2">⚡</div>
-                  <p className="text-sm font-medium">Scalable Systems</p>
-                </div>
-              </div>
-              <div className="aspect-square rounded-xl bg-gradient-to-br from-green-500 to-teal-500 p-4 text-white">
-                <div className="text-center h-full flex flex-col justify-center">
-                  <div className="text-3xl mb-2">💳</div>
-                  <p className="text-sm font-medium">Payment Systems</p>
-                </div>
-              </div>
-              <div className="aspect-square rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 p-4 text-white">
-                <div className="text-center h-full flex flex-col justify-center">
-                  <div className="text-3xl mb-2">👥</div>
-                  <p className="text-sm font-medium">Team Leadership</p>
-                </div>
+          <div>
+            <div>
+              <h3 className="text-2xl font-semibold mb-6">Key Achievements</h3>
+              <div className="grid gap-3">
+                <Card className="hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-4">
+                    <h4 className="font-semibold mb-2">Delivered 100+ Apps</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Exceeded client expectations by delivering 100+ high-quality apps within specified timelines.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-4">
+                    <h4 className="font-semibold mb-2">Boosted Customer Satisfaction</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Increased customer satisfaction by 25% through timely app updates and issue resolutions.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-4">
+                    <h4 className="font-semibold mb-2">Cut Crash Rates</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Reduced app crashes by 40% with effective issue analysis and bug fixes.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-4">
+                    <h4 className="font-semibold mb-2">Developed Restaurant Solutions</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Led a team to create a solution adopted by 5 top restaurants, enhancing digital presence.
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => (
-            <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 mx-auto mb-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
-                  <feature.icon className="h-6 w-6 text-white" />
-                </div>
-                <h4 className="font-semibold mb-2">{feature.title}</h4>
-                <p className="text-sm text-muted-foreground">{feature.description}</p>
-              </CardContent>
-            </Card>
-          ))}
         </div>
       </div>
     </section>

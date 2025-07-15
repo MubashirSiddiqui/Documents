@@ -1,122 +1,125 @@
 "use client"
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
+import { Globe, Database, Smartphone, Shield } from "lucide-react"
 
 export function SkillsSection() {
   const skillCategories = [
     {
-      title: "Languages",
+      title: "Automation Tools",
       skills: [
-        { name: "PHP", level: 95 },
-        { name: "JavaScript", level: 90 },
-        { name: "TypeScript", level: 60 },
-        { name: "SQL", level: 90 },
-        { name: "C#", level: 30 },
+        { name: "Selenium WebDriver", level: 95, color: "bg-purple-600" },
+        { name: "Cypress", level: 90, color: "bg-purple-600" },
+        { name: "Playwright", level: 85, color: "bg-purple-600" },
+        { name: "Appium", level: 80, color: "bg-purple-600" },
       ],
     },
     {
-      title: "Backend & Frontend Frameworks",
+      title: "Programming Languages",
       skills: [
-        { name: "Laravel", level: 95 },
-        { name: "Node.js", level: 60 },
-        { name: "Express.js", level: 60 },
-        { name: "NestJS", level: 55 },
-        { name: "Next.js", level: 50 },
+        { name: "Java", level: 90, color: "bg-green-600" },
+        { name: "Python", level: 85, color: "bg-green-600" },
+        { name: "JavaScript", level: 80, color: "bg-green-600" },
+        { name: "TypeScript", level: 75, color: "bg-green-600" },
       ],
     },
     {
-      title: "Databases & Caching",
+      title: "Tools & Technologies",
       skills: [
-        { name: "MySQL", level: 85 },
-        { name: "MongoDB", level: 75 },
-        { name: "Redis", level: 95 },
-        { name: "Elasticsearch", level: 75 },
-        { name: "Firebase", level: 40 },
+        { name: "Docker", level: 85, color: "bg-blue-600" },
+        { name: "Kubernetes", level: 70, color: "bg-blue-600" },
+        { name: "AWS", level: 75, color: "bg-blue-600" },
+        { name: "Azure", level: 65, color: "bg-blue-600" },
+        { name: "Git", level: 90, color: "bg-blue-600" },
+      ],
+    },
+    {
+      title: "Methodologies",
+      skills: [
+        { name: "Agile", level: 95, color: "bg-orange-600" },
+        { name: "Scrum", level: 90, color: "bg-orange-600" },
+        { name: "Kanban", level: 85, color: "bg-orange-600" },
+        { name: "Waterfall", level: 70, color: "bg-orange-600" },
       ],
     },
   ]
 
+  const competencyAreas = [
+    {
+      title: "Web Testing",
+      icon: <Globe className="w-8 h-8 text-purple-600" />,
+      keywords: ["Cross-browser", "Responsive", "Accessibility", "UI/UX"],
+    },
+    {
+      title: "API Testing",
+      icon: <Database className="w-8 h-8 text-green-600" />,
+      keywords: ["REST API", "GraphQL", "SOAP", "Microservices"],
+    },
+    {
+      title: "Mobile Testing",
+      icon: <Smartphone className="w-8 h-8 text-blue-600" />,
+      keywords: ["iOS", "Android", "Cross-platform", "Device Testing"],
+    },
+    {
+      title: "Security Testing",
+      icon: <Shield className="w-8 h-8 text-yellow-600" />,
+      keywords: ["OWASP", "Penetration", "Vulnerability", "Compliance"],
+    },
+  ]
+
   return (
-    <section id="skills" className="py-20 bg-muted/30">
+    <section id="skills" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Technical Skills</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive expertise across backend technologies, databases, and cloud platforms with proven track record
-            of optimization and scalability.
+            Comprehensive expertise across testing technologies and methodologies
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        {/* Skills Progress Bars */}
+        <div className="grid md:grid-cols-2 gap-12 mb-20">
           {skillCategories.map((category, categoryIndex) => (
-            <Card key={categoryIndex} className="hover:shadow-lg transition-shadow duration-300">
-              <CardHeader>
-                <CardTitle className="text-xl">{category.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="font-medium">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                      </div>
-                      <Progress value={skill.level} className="h-2" />
-                    </div>
+            <div key={categoryIndex} className="space-y-6">
+              <h3 className="text-xl font-semibold mb-4">{category.title}</h3>
+              {category.skills.map((skill, skillIndex) => (
+                <div key={skillIndex} className="space-y-2 group">
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium">{skill.name}</span>
+                    <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                  </div>
+                  <Progress
+                    value={skill.level}
+                    className="h-2 group-hover:h-3 transition-all duration-300"
+                    indicatorClassName={`${skill.color} group-hover:scale-x-105 transition-transform duration-300`}
+                  />
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+
+        {/* Competency Cards */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {competencyAreas.map((area, index) => (
+            <Card
+              key={index}
+              className="text-center p-6 shadow-sm border-gray-200 hover:shadow-lg transition-shadow duration-300"
+            >
+              <CardContent className="p-0 flex flex-col items-center">
+                <div className="mb-4">{area.icon}</div>
+                <CardTitle className="text-lg font-semibold mb-3">{area.title}</CardTitle>
+                <div className="flex flex-wrap justify-center gap-2 text-sm text-muted-foreground">
+                  {area.keywords.map((keyword, kwIndex) => (
+                    <span key={kwIndex} className="px-2 py-1 rounded-md bg-gray-100 text-gray-700">
+                      {keyword}
+                    </span>
                   ))}
                 </div>
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Professional Competency Summary */}
-        <div className="mt-16">
-          <Card className="bg-gradient-to-r from-purple-600 to-pink-600 text-white">
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h3 className="text-2xl font-bold mb-4">Professional Competency</h3>
-                  <p className="text-purple-100 mb-4">
-                    Demonstrated expertise in architecting and optimizing high-traffic backend systems serving{" "}
-                    <strong>20M+ users</strong>. Proven ability to deliver <strong>30%+ performance gains</strong>{" "}
-                    through advanced caching strategies and architectural improvements.
-                  </p>
-                  <div className="space-y-2">
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                      <span>Payment Systems (10+ gateway integrations)</span>
-                    </div>
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                      <span>Cloud Architecture (99.9% system reliability)</span>
-                    </div>
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                      <span>Team Leadership (30% productivity improvement)</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="relative w-32 h-32 mx-auto mb-4">
-                    <div className="absolute inset-0 rounded-full border-4 border-white/30"></div>
-                    <div
-                      className="absolute inset-0 rounded-full border-4 border-white border-t-transparent animate-spin"
-                      style={{ animationDuration: "3s" }}
-                    ></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="text-3xl font-bold">91</div>
-                        <div className="text-sm">/ 100</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="text-lg font-semibold">Senior Backend Engineer</div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

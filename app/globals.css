@@ -113,3 +113,45 @@ html {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(19, 185, 235, 0.274);
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.pulse-dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(19, 185, 235, 0.274);
+  color: var(--primary-color);
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.blinkingDot {
+  width: 15px;
+  height: 15px;
+  background: rgba(19, 185, 235, 0.274);
+  color: var(--primary-color);
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
