@@ -11,37 +11,37 @@ export function ProjectsSection() {
     {
       title: "Golootlo - High-Traffic Discounts Platform",
       description:
-        "Designed RESTful APIs serving 20M+ users with 60K+ peak concurrency. Built subscription billing platform integrating 10+ local gateways and CyberSource APIs, enabling 35K+ daily transactions.",
+      "Ensured flawless transactions for subscription platform processing 35K+ daily payments through end-to-end testing of 10+ payment gateway integrations (including CyberSource)",
       image: "/images/golootlo.jpg",
       technologies: ["Laravel", "MySQL", "MongoDB", "Elasticsearch", "CyberSource", "NestJS", "Redis", "AWS"],
       liveUrl: "https://golootlo.pk/",
       githubUrl: "#",
       featured: true,
       company: "DECAGON PAKISTAN",
-      period: "2019-Present",
+      period: "2019 - Present",
     },
     {
-      title: "Your Rewards - Employee Benefits Platform",
+      title: "Ministry of Health - Public Health Program",
       description:
-        "Established a backend portal for managing 500+ partner deals. Integrated Elasticsearch to enable precise geo-targeted partner search, reducing search response time by 40%.",
+      "Developed and automated scripted solutions to generate 500+ standardized monographs for the Ministry of Health (KSA) application, ensuring consistent documentation quality and reducing manual processing time by 70%.",      
       image: "/images/project1.jpg",
       technologies: ["Laravel", "MySQL", "Elasticsearch", "REST APIs"],
-      liveUrl: "https://yourrewards.io/",
+      liveUrl: "https://www.moh.gov.sa",
       githubUrl: "#",
       featured: true,
-      company: "Dubai Project",
-      period: "2022",
+      company: "Ministry of Health",
+      period: "2019 - Present",
     },
     {
-      title: "The Huntr - Digital Media Platform",
+      title: "Katshing - Mobile subscription",
       description:
-        "Engineered Laravel backend and RESTful APIs for members-only platform. Enabled location-based search with Elasticsearch and integrated Stripe subscriptions for 20K+ users.",
+      "Conducted UI/UX testing for consistency, validated responsive design on multiple devices and browsers, and tested subscription workflows (sign-up, payments, renewals, cancellations.) ",
       image: "/images/project2.jpg",
       technologies: ["Laravel", "MySQL", "Elasticsearch", "Stripe", "REST APIs"],
-      liveUrl: "https://thehuntr.com",
+      liveUrl: "",
       githubUrl: "#",
       featured: false,
-      period: "2023",
+      period: "2019",
     },
     {
       title: "Karachi Water & Sewerage Board",
@@ -57,7 +57,7 @@ export function ProjectsSection() {
     {
       title: "Extensia - Volunteer Management System",
       description:
-        "Crafted two mobile-first web apps using Next.js for mosque volunteer management. Integrated AWS Cognito for secure authentication with check-in/out system.",
+        "Performed comprehensive end-to-end testing of the application, including UI/UX validation, cross-device responsiveness, and critical subscription workflows (sign-up, payments, renewals), ensuring seamless functionality and accessibility to support Extensia’s mission-driven platform.",
       image: "/images/project4.jpg",
       technologies: ["React", "Next.js", "AWS Cognito"],
       liveUrl: "https://extensia.cloud/",

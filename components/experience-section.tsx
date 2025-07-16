@@ -13,7 +13,7 @@ export function ExperienceSection() {
     period: "Nov 2019 – Present",
     description:
       "Leading quality assurance efforts for a high-traffic discount platform, ensuring robust performance and reliability for 20M+ users through comprehensive testing strategies and automation.",
-        technologies: ["Postman", "JMeter", "SQL", "MongoDB","Redis","Elastic Search","Android Studio", "Cypress","Charles Proxy","Firebase","MongoDB","New Relic","Burp Suite", "Appium"],
+        technologies: ["Postman", "JMeter", "SQL", "MongoDB","Redis Cache","Elastic Search","Android Studio", "Cypress","Charles Proxy","Firebase","MongoDB","New Relic","Burp Suite", "Appium"],
     achievements: [
       "Developed and executed test plans and test cases for web & mobile applications, supporting 20M+ users.",
       "Implemented automated testing frameworks using Selenium and Cypress, reducing regression testing time by 40%.",
@@ -35,7 +35,7 @@ export function ExperienceSection() {
     period: "Sept 2019 – Mar 2022",
     description:
       "Specialized in developing and implementing automated solutions for critical application functionalities.",      
-    technologies: ["Selenium", "Cypress", "Jira", "BugZilla", "Postman", "JMeter", "SQL", "Agile/Scrum"],
+    technologies: ["Selenium", "Cypress", "Jira", "BugZilla", "Postman", "JMeter", "SQL", "Pycharm"],
     achievements: [
       "Implemented scripted functionality to generate monographs for the Ministry of Health application (KSA).",
       "Provided 100+ bug reports to development teams, facilitating efficient issue resolution and product improvement.",
@@ -50,7 +50,7 @@ export function ExperienceSection() {
       period: "Mar 2019 – Oct 2019",
       description:
         "Collaborated with multiple clients to develop test scripts for ERP solutions and manually tested game applications.",
-      technologies: ["Slack", "MySQL", "Selenium", "Appium"],
+      technologies: ["Slack", "MySQL", "Selenium", "Appium", "Netbeans", "Trello"],
       achievements:  [
       "Developed test cases in Java, utilizing Selenium WebDriver to ensure the reliability and functionality of web applications.",
       "Performed mobile application testing using Appium, ensuring seamless user experiences across diverse platforms.",
@@ -58,12 +58,12 @@ export function ExperienceSection() {
     ],
     },
     {
-      title: "Junior SQA Engineer",
+      title: "Junior SQA Engineer (Remote)",
       company: "Oventum Technologies",
-      location: "Karachi, Pakistan",
+      location: "Auckland, New Zealand",
       period: "Aug 2018 – Feb 2019",
       description: "Assist in testing web and mobile applications by executing test cases, reporting bugs, and ensuring software quality under supervision.",
-      technologies: ["PHP", "MySQL", "ASP.NET", "SQL Server"],
+      technologies: ["MS Office", "Slack", "Trello", "Postman"],
       achievements: [
       "Created customized Odoo Enterprise ERP applications for multiple clients to ensure quality assurance.",
       "Developed and tested Odoo addons, projects, products, and interfaces, guaranteeing seamless functionality.",
@@ -193,16 +193,24 @@ export function ExperienceSection() {
               <h4 className="text-lg font-semibold mb-4">Certifications</h4>
               <div className="space-y-3">
                 <Card className="p-4">
-                  <div className="text-sm font-medium">AWS Certified Solutions Architect</div>
-                  <div className="text-xs text-muted-foreground">Amazon Web Services • 2023</div>
+                  <div className="text-sm font-medium">Software Testing and Automation</div>
+                  <div className="text-xs text-muted-foreground">University of Minnesota • 2022</div>
                 </Card>
                 <Card className="p-4">
-                  <div className="text-sm font-medium">Google Cloud Professional Developer</div>
-                  <div className="text-xs text-muted-foreground">Google Cloud • 2022</div>
+                  <div className="text-sm font-medium">Software Design and Architecture</div>
+                  <div className="text-xs text-muted-foreground">Unviersity of Alberta • 2022</div>
                 </Card>
                 <Card className="p-4">
-                  <div className="text-sm font-medium">MongoDB Certified Developer</div>
-                  <div className="text-xs text-muted-foreground">MongoDB Inc. • 2021</div>
+                  <div className="text-sm font-medium">The Future of Payment Technologies</div>
+                  <div className="text-xs text-muted-foreground">University of Michigan • 2021</div>
+                </Card>
+                <Card className="p-4">
+                  <div className="text-sm font-medium">AWS Fundamentals: Building Serverless Applications</div>
+                  <div className="text-xs text-muted-foreground">Amazon Web Services • 2020</div>
+                </Card>
+                <Card className="p-4">
+                  <div className="text-sm font-medium">FinTech: Foundations, Payments and Regulations</div>
+                  <div className="text-xs text-muted-foreground">University of Pennsylvania • 2020</div>
                 </Card>
               </div>
             </div> 

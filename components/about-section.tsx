@@ -40,17 +40,16 @@ export function AboutSection() {
               <div className="grid gap-3">
                 <Card className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">Delivered 100+ Apps</h4>
+                    <h4 className="font-semibold mb-2">Tested 100+ Apps</h4>
                     <p className="text-sm text-muted-foreground">
-                      Exceeded client expectations by delivering 100+ high-quality apps within specified timelines.
-                    </p>
+                      Exceeded client expectations by ensuring 100+ defect-free app releases through rigorous testing protocols, meeting all critical deadlines.</p>
                   </CardContent>
                 </Card>
                 <Card className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-4">
                     <h4 className="font-semibold mb-2">Boosted Customer Satisfaction</h4>
                     <p className="text-sm text-muted-foreground">
-                      Increased customer satisfaction by 25% through timely app updates and issue resolutions.
+                      Boosted customer satisfaction by 25% through proactive defect prevention, rapid issue triage, and data-driven quality improvements.
                     </p>
                   </CardContent>
                 </Card>
@@ -64,10 +63,9 @@ export function AboutSection() {
                 </Card>
                 <Card className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">Developed Restaurant Solutions</h4>
+                    <h4 className="font-semibold mb-2">Technical Leadership & Mentorship</h4>
                     <p className="text-sm text-muted-foreground">
-                      Led a team to create a solution adopted by 5 top restaurants, enhancing digital presence.
-                    </p>
+                      Led QA teams in implementing shift-left testing, risk-based approaches, and quality metrics tracking across development lifecycles                    </p>
                   </CardContent>
                 </Card>
               </div>
