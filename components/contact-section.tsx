@@ -200,7 +200,7 @@ export function ContactSection() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-gradient-to-r from-teal-600 to-teal-600 hover:from-teal-700 hover:to-teal-700 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>
@@ -238,12 +238,12 @@ export function ContactSection() {
                 <div className="space-y-4">
                   {contactInfo.map((info, index) => (
                     <div key={index} className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
+                      <div className="w-10 h-10 bg-gradient-to-r from-teal-600 to-teal-600 rounded-lg flex items-center justify-center">
                         <info.icon className="h-5 w-5 text-white" />
                       </div>
                       <div>
                         <div className="text-sm text-muted-foreground">{info.label}</div>
-                        <a href={info.href} className="font-medium hover:text-purple-600 transition-colors">
+                        <a href={info.href} className="font-medium hover:text-teal-600 transition-colors">
                           {info.value}
                         </a>
                       </div>
@@ -253,11 +253,11 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-            {/* <Card className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:shadow-lg transition-shadow duration-300">
+            {/* <Card className="bg-gradient-to-r from-teal-600 to-teal-600 text-white hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Ready to Start?</h3>
-                <p className="text-purple-100 mb-4">Let's discuss your project and bring your ideas to life.</p>
-                <Button variant="secondary" className="bg-white text-purple-600 hover:bg-gray-100">
+                <p className="text-teal-100 mb-4">Let's discuss your project and bring your ideas to life.</p>
+                <Button variant="secondary" className="bg-white text-teal-600 hover:bg-gray-100">
                   Schedule a Call
                 </Button>
               </CardContent>

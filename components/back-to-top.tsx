@@ -47,7 +47,7 @@ export function BackToTop() {
     <Button
       onClick={scrollToTop}
       size="icon"
-      className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce"
+      className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-gradient-to-r from-teal-600 to-teal-600 hover:from-teal-700 hover:to-teal-700 shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce"
       aria-label="Back to top"
     >
       <ArrowUp className="h-5 w-5 text-white" />

@@ -9,10 +9,10 @@ export function SkillsSection() {
     {
       title: "Automation Tools",
       skills: [
-        { name: "Selenium WebDriver", level: 95, color: "bg-purple-600" },
-        { name: "Cypress", level: 90, color: "bg-purple-600" },
-        { name: "Playwright", level: 85, color: "bg-purple-600" },
-        { name: "Appium", level: 80, color: "bg-purple-600" },
+        { name: "Selenium WebDriver", level: 95, color: "bg-teal-600" },
+        { name: "Cypress", level: 90, color: "bg-teal-600" },
+        { name: "Playwright", level: 85, color: "bg-teal-600" },
+        { name: "Appium", level: 80, color: "bg-teal-600" },
       ],
     },
     {
@@ -48,7 +48,7 @@ export function SkillsSection() {
   const competencyAreas = [
     {
       title: "Web Testing",
-      icon: <Globe className="w-8 h-8 text-purple-600" />,
+      icon: <Globe className="w-8 h-8 text-teal-600" />,
       keywords: ["Cross-browser", "Responsive", "Accessibility", "UI/UX"],
     },
     {

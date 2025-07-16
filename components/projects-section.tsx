@@ -107,7 +107,7 @@ export function ProjectsSection() {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
                   <span className="text-lg">{project.title}</span>
-                  <Badge className="bg-gradient-to-r from-purple-600 to-pink-600">Featured</Badge>
+                  <Badge className="bg-gradient-to-r from-teal-600 to-teal-600">Featured</Badge>
                 </CardTitle>
                 <div className="text-sm text-muted-foreground">
                   {project.company} • {project.period}

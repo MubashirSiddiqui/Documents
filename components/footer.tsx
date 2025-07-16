@@ -27,7 +27,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center mb-4">
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-teal-600 bg-clip-text text-transparent">
                 M.Aashir
               </span>
             </div>
@@ -36,7 +36,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-2">
               {socialLinks.map((link, index) => (
-                <Button key={index} variant="ghost" size="icon" asChild className="hover:text-purple-600">
+                <Button key={index} variant="ghost" size="icon" asChild className="hover:text-teal-600">
                   <a href={link.href} aria-label={link.label}>
                     <link.icon className="h-5 w-5" />
                   </a>

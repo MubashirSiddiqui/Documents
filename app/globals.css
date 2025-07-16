@@ -152,6 +152,14 @@ html {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
+  0%, 100% { opacity: 0; }
   50% { opacity: 0; }
+}
+
+@layer utilities {
+  .bg-teal-50 {
+    background-color: #28f1c3;
+  }
+  
+  /* You can add other custom utilities here too */
 }

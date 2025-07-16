@@ -62,8 +62,8 @@ export function SkillsSection() {
         {/* Achievement Badges */}
         <div className="flex flex-wrap justify-center gap-4 mb-16">
           {achievements.map((achievement, index) => (
-            <div key={index} className="bg-gradient-to-r from-purple-600/10 to-pink-600/10 rounded-lg p-4 text-center min-w-[150px]">
-              <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <div key={index} className="bg-gradient-to-r from-teal-600/10 to-teal-600/10 rounded-lg p-4 text-center min-w-[150px]">
+              <div className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-teal-600 bg-clip-text text-transparent">
                 {achievement.value}
               </div>
               <div className="text-sm text-muted-foreground">{achievement.label}</div>
@@ -77,7 +77,7 @@ export function SkillsSection() {
             <Card key={categoryIndex} className="hover:shadow-lg transition-shadow duration-300 group">
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+                  <div className="p-2 rounded-lg bg-gradient-to-r from-teal-600 to-teal-600 text-white">
                     {category.icon}
                   </div>
                   <CardTitle className="text-xl">{category.title}</CardTitle>
@@ -99,7 +99,7 @@ export function SkillsSection() {
                       <Progress 
                         value={skill.level} 
                         className="h-2 group-hover:h-3 transition-all duration-300"
-                        indicatorClassName="bg-gradient-to-r from-purple-600 to-pink-600"
+                        indicatorClassName="bg-gradient-to-r from-teal-600 to-teal-600"
                       />
                     </div>
                   ))}
@@ -111,12 +111,12 @@ export function SkillsSection() {
 
         {/* Professional Competency Summary */}
         <div className="mt-16">
-          <Card className="bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+          <Card className="bg-gradient-to-r from-teal-600 to-teal-600 text-white">
             <CardContent className="p-8">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-4">Quality Assurance Expertise</h3>
-                  <p className="text-purple-100 mb-6">
+                  <p className="text-teal-100 mb-6">
                     Demonstrated success in implementing QA processes that reduced production defects by{" "}
                     <strong>60%+</strong> while increasing test coverage to <strong>95%+</strong> across enterprise applications.
                   </p>
@@ -131,7 +131,7 @@ export function SkillsSection() {
                         <div className="flex-shrink-0 mt-1">
                           <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
                         </div>
-                        <span className="text-purple-50">{item}</span>
+                        <span className="text-teal-50">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -152,10 +152,10 @@ export function SkillsSection() {
                     </div>
                   </div>
                   <div className="flex justify-center gap-2">
-                    <Badge variant="secondary" className="text-purple-600">
+                    <Badge variant="secondary" className="text-teal-600">
                       ISTQB Certified
                     </Badge>
-                    <Badge variant="secondary" className="text-pink-600">
+                    <Badge variant="secondary" className="text-teal-600">
                       Agile Expert
                     </Badge>
                   </div>

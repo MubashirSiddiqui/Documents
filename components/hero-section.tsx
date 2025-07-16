@@ -32,13 +32,13 @@ export function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 pb-8">
       {/* Background remains unchanged */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
+      <div className="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-teal-400 dark:from-gray-900 dark:via-gray-800 dark:to-teal-900">
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
       </div>
 
       {/* Floating elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-purple-200 dark:bg-purple-800 rounded-full opacity-20 animate-pulse hidden md:block"></div>
-      <div className="absolute top-40 right-20 w-16 h-16 bg-pink-200 dark:bg-pink-800 rounded-full opacity-20 animate-pulse delay-1000 hidden md:block"></div>
+      <div className="absolute top-20 left-10 w-20 h-20 bg-teal-200 dark:bg-teal-800 rounded-full opacity-20 animate-pulse hidden md:block"></div>
+      <div className="absolute top-40 right-20 w-16 h-16 bg-teal-200 dark:bg-teal-800 rounded-full opacity-20 animate-pulse delay-1000 hidden md:block"></div>
       <div className="absolute bottom-40 left-20 w-12 h-12 bg-yellow-200 dark:bg-yellow-800 rounded-full opacity-20 animate-pulse delay-2000 hidden md:block"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -68,12 +68,12 @@ export function HeroSection() {
                   }
                 `}</style>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 lg:mb-6">
-              <span className="block text-foreground">Hi, I'm</span>
-              <span className="block bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent leading-tight">
-                Mubashir Siddiqui
-              </span>
-            </h1>
+           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 lg:mb-6">
+  <span className="block text-foreground">Hi, I'm</span>
+  <span className="block text-teal-600 dark:text-teal-400 leading-tight">
+    Mubashir Siddiqui
+  </span>
+</h1>
 
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 lg:mb-8 leading-relaxed">
               Senior QA Engineer with 8+ years ensuring flawless software delivery. Expert in test automation, CI/CD pipelines, 
@@ -83,7 +83,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center lg:justify-start mb-6 lg:mb-8">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-sm sm:text-base"
+                className="bg-gradient-to-r from-teal-600 to-teal-600 hover:from-teal-700 hover:to-teal-700 text-sm sm:text-base"
                 asChild
               >
                 <a href="#projects">View My Work</a>
@@ -91,7 +91,7 @@ export function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white text-sm sm:text-base"
+                className="border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white text-sm sm:text-base"
                 asChild
               >
                 <a
@@ -105,17 +105,17 @@ export function HeroSection() {
             </div>
 
             <div className="flex justify-center lg:justify-start space-x-4 lg:space-x-6">
-              <Button variant="ghost" size="icon" className="hover:text-purple-600" asChild>
+              <Button variant="ghost" size="icon" className="hover:text-teal-600" asChild>
                 <a href="https://github.com/mubashir" target="_blank" rel="noopener noreferrer">
                   <Github className="h-5 w-5 lg:h-6 lg:w-6" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-purple-600" asChild>
+              <Button variant="ghost" size="icon" className="hover:text-teal-600" asChild>
                 <a href="https://www.linkedin.com/in/mubashir" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5 lg:h-6 lg:w-6" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-purple-600" asChild>
+              <Button variant="ghost" size="icon" className="hover:text-teal-600" asChild>
                 <a href="mailto:mubashir.siddiqui@example.com">
                   <Mail className="h-5 w-5 lg:h-6 lg:w-6" />
                 </a>
@@ -126,8 +126,8 @@ export function HeroSection() {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative">
-                    <div className="w-[23rem] h-[23rem] sm:w-[26rem] sm:h-[26rem] md:w-[28rem] md:h-[28rem] lg:w-[28rem] lg:h-[28rem] rounded-full bg-gradient-to-r from-purple-600 to-pink-600 p-3">
-           {/*<div className="w-80 h-80 sm:w-88 sm:h-88 md:w-96 md:h-96 lg:w-96 lg:h-96 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 p-2">*/}
+                    <div className="w-[23rem] h-[23rem] sm:w-[26rem] sm:h-[26rem] md:w-[28rem] md:h-[28rem] lg:w-[28rem] lg:h-[28rem] rounded-full bg-gradient-to-r from-teal-600 to-teal-600 p-3">
+           {/*<div className="w-80 h-80 sm:w-88 sm:h-88 md:w-96 md:h-96 lg:w-96 lg:h-96 rounded-full bg-gradient-to-r from-teal-600 to-teal-600 p-2">*/}
                 <div className="w-full h-full rounded-full overflow-hidden bg-background">
                   <Image
                     src="/images/profile.jpg"
@@ -200,7 +200,7 @@ export function HeroSection() {
 
               {/* 4. Playwright - Middle Right */}
               <div
-                className="absolute bottom-1/3 -right-3 sm:-right-4 lg:-right-6 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer group slow-pulse"
+                className="absolute bottom-1/3 -right-3 sm:-right-4 lg:-right-6 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r from-teal-500 to-indigo-600 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer group slow-pulse"
                 style={{ animationDelay: "3s" }}
                 title="Playwright"
               >
@@ -226,7 +226,7 @@ export function HeroSection() {
 
               {/* 6. CI/CD - Bottom Right */}
               <div
-                className="absolute -bottom-4 right-1/3 sm:-bottom-6 sm:right-1/3 lg:-bottom-8 lg:right-1/3 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer group slow-pulse"
+                className="absolute -bottom-4 right-1/3 sm:-bottom-6 sm:right-1/3 lg:-bottom-8 lg:right-1/3 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-teal-500 to-teal-800 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer group slow-pulse"
                 style={{ animationDelay: "5s" }}
                 title="CI/CD"
               >
