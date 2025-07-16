@@ -6,47 +6,69 @@ import { Calendar, MapPin } from "lucide-react"
 
 export function ExperienceSection() {
   const experiences = [
+  {
+    title: "Senior QA Engineer",
+    company: "GOLOOTLO - DECAGON PAKISTAN PVT. LTD",
+    location: "Karachi, Pakistan",
+    period: "Nov 2019 – Present",
+    description:
+      "Leading quality assurance efforts for a high-traffic discount platform, ensuring robust performance and reliability for 20M+ users through comprehensive testing strategies and automation.",
+        technologies: ["Postman", "JMeter", "SQL", "MongoDB","Redis","Elastic Search","Android Studio", "Cypress","Charles Proxy","Firebase","MongoDB","New Relic","Burp Suite", "Appium"],
+    achievements: [
+      "Developed and executed test plans and test cases for web & mobile applications, supporting 20M+ users.",
+      "Implemented automated testing frameworks using Selenium and Cypress, reducing regression testing time by 40%.",
+      "Managed and tracked defects using Jira, ensuring timely resolution and improving product quality.",
+      "Performed performance and load testing using JMeter and improving system stability under peak loads.",
+      "Collaborated closely with development and product teams to define requirements and ensure testability of new features.",
+      "Mentored 6+ junior QA engineers, enhancing team's testing capabilities and overall productivity by 30%.",
+      "Contributed to the continuous integration/continuous delivery (CI/CD) pipeline by integrating automated tests.",
+      "Conducted extensive manual functional, regression, and exploratory testing across web and mobile platforms.",
+      "Performed cross-browser and cross-device compatibility testing to ensure consistent user experience.",
+      "Executed user acceptance testing (UAT) with stakeholders to validate features against business requirements.",
+    ],
+  },
+
+  {
+    title: "QA Engineer (Part-time Project based)",
+    company: "BINARY REVOLUTIONS PVT. LTD",
+    location: "Karachi, Pakistan",
+    period: "Sept 2019 – Mar 2022",
+    description:
+      "Specialized in developing and implementing automated solutions for critical application functionalities.",      
+    technologies: ["Selenium", "Cypress", "Jira", "BugZilla", "Postman", "JMeter", "SQL", "Agile/Scrum"],
+    achievements: [
+      "Implemented scripted functionality to generate monographs for the Ministry of Health application (KSA).",
+      "Provided 100+ bug reports to development teams, facilitating efficient issue resolution and product improvement.",
+      "Led the integration of 3rd-party payment systems and subscription models, streamlining financial transactions.",
+    ],
+  },
+
     {
-      title: "Senior Software Engineer",
-      company: "Golootlo - DECAGON PAKISTAN PVT. LTD.",
+      title: "QA Automation Engineer",
+      company: "RIKSOF PVT. Ltd",
       location: "Karachi, Pakistan",
-      period: "Jul 2019 – Present",
+      period: "Mar 2019 – Oct 2019",
       description:
-        "Leading backend development for high-traffic discount platform serving 20M+ users with advanced payment systems and microservices architecture.",
-      technologies: ["Laravel", "Node.js", "NestJS", "AWS", "Redis", "MySQL", "MongoDB"],
-      achievements: [
-        "Designed and maintained RESTful APIs serving 20M+ users with 60K+ peak concurrency",
-        "Built subscription billing platform integrating 10+ local gateways and CyberSource APIs",
-        "Improved API speed by 30% and halved DB load via Redis caching strategy",
-        "Handled 500K+ monthly jobs with AWS SQS/SNS, improving reliability to 99.9%",
-        "Centralized 5M+ monthly logs using ELK Stack for faster diagnostics",
-        "Mentored 6+ juniors, enhancing team productivity by 30%",
-      ],
+        "Collaborated with multiple clients to develop test scripts for ERP solutions and manually tested game applications.",
+      technologies: ["Slack", "MySQL", "Selenium", "Appium"],
+      achievements:  [
+      "Developed test cases in Java, utilizing Selenium WebDriver to ensure the reliability and functionality of web applications.",
+      "Performed mobile application testing using Appium, ensuring seamless user experiences across diverse platforms.",
+      "Maintained detailed test documentation for traceability of testing activities.",
+    ],
     },
     {
-      title: "ERP Developer",
-      company: "Wayz Consulting",
+      title: "Junior SQA Engineer",
+      company: "Oventum Technologies",
       location: "Karachi, Pakistan",
-      period: "Jan 2019 – Jun 2019",
-      description:
-        "Collaborated with multiple clients to develop ERP solutions and implemented automated testing pipelines.",
-      technologies: ["PHP", "MySQL", "Selenium", "Jenkins"],
-      achievements: [
-        "Collaborated with 3+ clients to define technical specs, ensuring accurate delivery",
-        "Designed and developed 5+ RESTful APIs for ERP modules in PHP",
-        "Reduced deployment errors by 25% via Selenium (Java/TestNG) and Jenkins pipelines",
-      ],
-    },
-    {
-      title: "Software Intern",
-      company: "Datawisdom",
-      location: "Karachi, Pakistan",
-      period: "Oct 2017 – Mar 2018",
-      description: "Developed e-commerce platform and assisted in legacy system optimization projects.",
+      period: "Aug 2018 – Feb 2019",
+      description: "Assist in testing web and mobile applications by executing test cases, reporting bugs, and ensuring software quality under supervision.",
       technologies: ["PHP", "MySQL", "ASP.NET", "SQL Server"],
       achievements: [
-        "Constructed an e-commerce platform using PHP and MySQL with 200+ product listings",
-        "Assisted in ASP.NET/SQL Server projects, optimizing legacy systems",
+      "Created customized Odoo Enterprise ERP applications for multiple clients to ensure quality assurance.",
+      "Developed and tested Odoo addons, projects, products, and interfaces, guaranteeing seamless functionality.",
+      "Enhanced user experience by documenting system processes for end-users.",
+      "Provided customer support and guidance on Odoo module functionality, ensuring high client satisfaction.",
       ],
     },
   ]
@@ -58,16 +80,16 @@ export function ExperienceSection() {
       location: "Karachi, Pakistan",
       period: "2021 – 2022",
       description: "Advanced studies in computer science with focus on software engineering and system architecture.",
-      achievements: ["Specialized in Backend Systems", "Advanced Database Management", "Cloud Computing"],
+      achievements: ["Image Processing & Computer Vision", "Natural Language Programing","Cloud Computing", "Data Mining"],
     },
     {
       degree: "BS in Computer Science",
       school: "University of Karachi",
       location: "Karachi, Pakistan",
-      period: "2015 – 2018",
+      period: "2014 – 2017",
       description:
         "Comprehensive computer science education with strong foundation in programming and software development.",
-      achievements: ["Software Development", "Database Systems", "Web Technologies"],
+      achievements: ["Software Development", "Computer Networks","Database Systems", "Web Technologies"],
     },
   ]
 

@@ -1,7 +1,5 @@
 "use client"
-
 import type React from "react"
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -18,7 +16,6 @@ export function ContactSection() {
     subject: "",
     message: "",
   })
-
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
@@ -26,11 +23,9 @@ export function ContactSection() {
     e.preventDefault()
     setIsSubmitting(true)
     setSubmitStatus("idle")
-
     try {
       const form = e.currentTarget
       const formData = new FormData(form)
-
       const response = await fetch("https://formspree.io/f/mnnvgrdd", {
         method: "POST",
         body: formData,
@@ -38,7 +33,6 @@ export function ContactSection() {
           Accept: "application/json",
         },
       })
-
       if (response.ok) {
         setSubmitStatus("success")
         setFormData({ name: "", email: "", subject: "", message: "" })
@@ -69,19 +63,19 @@ export function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "aashirulhaque@gmail.com",
-      href: "mailto:aashirulhaque@gmail.com",
+      value: "mubashir.siddiqui@thevisionspark.com",
+      href: "mailto:mubashir.siddiqui@thevisionspark.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (630) 943-2845",
-      href: "tel:+16309432845",
+      value: "+92 (334) 880-0240",
+      href: "tel:+923348800240",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Glen Ellyn, IL, USA",
+      value: "Karachi, PK",
       href: "#",
     },
   ]
@@ -96,7 +90,6 @@ export function ContactSection() {
             together.
           </p>
         </div>
-
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
           <Card className="hover:shadow-lg transition-shadow duration-300">
@@ -112,17 +105,14 @@ export function ContactSection() {
                 <input type="hidden" name="_subject" value="New contact form submission from portfolio" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
-
                 {/* Honeypot Field - Hidden from users but visible to bots */}
                 <div style={{ display: "none" }}>
-                  <label htmlFor="_gotcha">Don't fill this out if you're human:</label>
+                  <Label htmlFor="_gotcha">Don't fill this out if you're human:</Label>
                   <input type="text" name="_gotcha" id="_gotcha" tabIndex={-1} autoComplete="off" />
                 </div>
-
                 {/* Alternative honeypot with common bot-targeted names */}
                 <input type="text" name="website" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
                 <input type="email" name="email_confirm" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
-
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
@@ -152,7 +142,6 @@ export function ContactSection() {
                     />
                   </div>
                 </div>
-
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>
                   <Input
@@ -166,7 +155,6 @@ export function ContactSection() {
                     autoComplete="off"
                   />
                 </div>
-
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
                   <Textarea
@@ -181,7 +169,6 @@ export function ContactSection() {
                     autoComplete="off"
                   />
                 </div>
-
                 {/* Status Messages */}
                 {submitStatus === "success" && (
                   <div className="flex items-center space-x-2 text-green-600 bg-green-50 p-3 rounded-md">
@@ -189,14 +176,12 @@ export function ContactSection() {
                     <span>Thank you! Your message has been sent successfully. I'll get back to you soon.</span>
                   </div>
                 )}
-
                 {submitStatus === "error" && (
                   <div className="flex items-center space-x-2 text-red-600 bg-red-50 p-3 rounded-md">
                     <AlertCircle className="h-5 w-5" />
                     <span>Sorry, there was an error sending your message. Please try again or email me directly.</span>
                   </div>
                 )}
-
                 <Button
                   type="submit"
                   disabled={isSubmitting}
@@ -214,7 +199,6 @@ export function ContactSection() {
                     </>
                   )}
                 </Button>
-
                 {/* Anti-spam notice */}
                 <p className="text-xs text-muted-foreground text-center">
                   This form is protected against spam. Your privacy is important to us.
@@ -222,7 +206,6 @@ export function ContactSection() {
               </form>
             </CardContent>
           </Card>
-
           {/* Contact Information */}
           <div className="space-y-8">
             <Card className="hover:shadow-lg transition-shadow duration-300">
@@ -234,7 +217,6 @@ export function ContactSection() {
                   I'm always open to discussing new opportunities, creative projects, or just having a chat about
                   technology and design.
                 </p>
-
                 <div className="space-y-4">
                   {contactInfo.map((info, index) => (
                     <div key={index} className="flex items-center space-x-3">
@@ -252,16 +234,23 @@ export function ContactSection() {
                 </div>
               </CardContent>
             </Card>
-
-            {/* <Card className="bg-gradient-to-r from-teal-600 to-teal-600 text-white hover:shadow-lg transition-shadow duration-300">
+            {/* New Direct Contact Card */}
+            <Card className="bg-gradient-to-r from-teal-600 to-teal-600 text-white hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Ready to Start?</h3>
-                <p className="text-teal-100 mb-4">Let's discuss your project and bring your ideas to life.</p>
-                <Button variant="secondary" className="bg-white text-teal-600 hover:bg-gray-100">
-                  Schedule a Call
-                </Button>
+                <h3 className="text-xl font-semibold mb-2">Prefer Direct Contact?</h3>
+                <p className="text-teal-100 mb-4">
+                  Feel free to reach out directly via email or phone for a quicker response.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button variant="secondary" className="bg-white text-teal-600 hover:bg-gray-100" asChild>
+                    <a href={contactInfo[0].href}>Email Me Directly</a>
+                  </Button>
+                  <Button variant="secondary" className="bg-white text-teal-600 hover:bg-gray-100" asChild>
+                    <a href={contactInfo[1].href}>Call Now</a>
+                  </Button>
+                </div>
               </CardContent>
-            </Card> */}
+            </Card>
           </div>
         </div>
       </div>

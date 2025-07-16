@@ -37,9 +37,12 @@ export function HeroSection() {
       </div>
 
       {/* Floating elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-teal-200 dark:bg-teal-800 rounded-full opacity-20 animate-pulse hidden md:block"></div>
+      <div className="absolute top-20 left-60 w-20 h-20 bg-teal-200 dark:bg-teal-800 rounded-full opacity-20 animate-  hidden md:block"></div>
       <div className="absolute top-40 right-20 w-16 h-16 bg-teal-200 dark:bg-teal-800 rounded-full opacity-20 animate-pulse delay-1000 hidden md:block"></div>
-      <div className="absolute bottom-40 left-20 w-12 h-12 bg-yellow-200 dark:bg-yellow-800 rounded-full opacity-20 animate-pulse delay-2000 hidden md:block"></div>
+      <div className="absolute bottom-40 left-20 w-12 h-12 bg-teal-200 dark:bg-yellow-800 rounded-full opacity-20 animate-pulse delay-2000 hidden md:block"></div>
+         <div className="absolute top-60 left-20 w-20 h-20 bg-teal-200 dark:bg-dark-800 rounded-full opacity-20 animate-pulse hidden md:block"></div>
+      <div className="absolute top-80 right-30 w-16 h-16 bg-teal-200 dark:bg-teal-800 rounded-full opacity-20 animate-pulse delay-1000 hidden md:block"></div>
+      <div className="absolute bottom-80 left-40 w-12 h-12 bg-teal-200 dark:bg-teal-800 rounded-full opacity-20 animate-pulse delay-2000 hidden md:block"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -107,17 +110,17 @@ export function HeroSection() {
             <div className="flex justify-center lg:justify-start space-x-4 lg:space-x-6">
               <Button variant="ghost" size="icon" className="hover:text-teal-600" asChild>
                 <a href="https://github.com/mubashir" target="_blank" rel="noopener noreferrer">
-                  <Github className="h-5 w-5 lg:h-6 lg:w-6" />
+                  <Github className="h-5 w-5 lg:h-6 lg:w-6" style={{height:'25px', width:'25px'}} />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="hover:text-teal-600" asChild>
                 <a href="https://www.linkedin.com/in/mubashir" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="h-5 w-5 lg:h-6 lg:w-6" />
+                  <Linkedin className="h-5 w-5 lg:h-6 lg:w-6" style={{height:'25px', width:'25px'}} />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="hover:text-teal-600" asChild>
                 <a href="mailto:mubashir.siddiqui@example.com">
-                  <Mail className="h-5 w-5 lg:h-6 lg:w-6" />
+                  <Mail className="h-5 w-5 lg:h-6 lg:w-6" style={{height:'25px', width:'25px'}} />
                 </a>
               </Button>
             </div>
@@ -126,7 +129,7 @@ export function HeroSection() {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative">
-                    <div className="w-[23rem] h-[23rem] sm:w-[26rem] sm:h-[26rem] md:w-[28rem] md:h-[28rem] lg:w-[28rem] lg:h-[28rem] rounded-full bg-gradient-to-r from-teal-600 to-teal-600 p-3">
+                    <div className="w-[23rem] h-[23rem] sm:w-[26rem] sm:h-[26rem] md:w-[28rem] md:h-[28rem] lg:w-[28rem] lg:h-[28rem] rounded-full bg-gradient-to-r from-teal-600 to-teal-600 p-2">
            {/*<div className="w-80 h-80 sm:w-88 sm:h-88 md:w-96 md:h-96 lg:w-96 lg:h-96 rounded-full bg-gradient-to-r from-teal-600 to-teal-600 p-2">*/}
                 <div className="w-full h-full rounded-full overflow-hidden bg-background">
                   <Image
