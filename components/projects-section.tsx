@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 import Image from "next/image"
 
 export function ProjectsSection() {
@@ -11,9 +11,8 @@ export function ProjectsSection() {
     {
       title: "Golootlo - High-Traffic Discounts Platform",
       description:
-      "Ensured flawless transactions for subscription platform processing 35K+ daily payments through end-to-end testing of 10+ payment gateway integrations (including CyberSource)",
+        "Ensured flawless transactions for subscription platform processing 35K+ daily payments through end-to-end testing of 10+ payment gateway integrations (including CyberSource)",
       image: "/images/golootlo.jpg",
-      technologies: ["Laravel", "MySQL", "MongoDB", "Elasticsearch", "CyberSource", "NestJS", "Redis", "AWS"],
       liveUrl: "https://golootlo.pk/",
       githubUrl: "#",
       featured: true,
@@ -23,9 +22,8 @@ export function ProjectsSection() {
     {
       title: "Ministry of Health - Public Health Program",
       description:
-      "Developed and automated scripted solutions to generate 500+ standardized monographs for the Ministry of Health (KSA) application, ensuring consistent documentation quality and reducing manual processing time by 70%.",      
+        "Developed and automated scripted solutions to generate 500+ standardized monographs for the Ministry of Health (KSA) application, ensuring consistent documentation quality and reducing manual processing time by 70%.",
       image: "/images/project1.jpg",
-      technologies: ["Laravel", "MySQL", "Elasticsearch", "REST APIs"],
       liveUrl: "https://www.moh.gov.sa",
       githubUrl: "#",
       featured: true,
@@ -35,21 +33,19 @@ export function ProjectsSection() {
     {
       title: "Katshing - Mobile subscription",
       description:
-      "Conducted UI/UX testing for consistency, validated responsive design on multiple devices and browsers, and tested subscription workflows (sign-up, payments, renewals, cancellations.) ",
+        "Conducted UI/UX testing for consistency, validated responsive design on multiple devices and browsers, and tested subscription workflows (sign-up, payments, renewals, cancellations.) ",
       image: "/images/project2.jpg",
-      technologies: ["Laravel", "MySQL", "Elasticsearch", "Stripe", "REST APIs"],
       liveUrl: "",
       githubUrl: "#",
       featured: false,
       period: "2019",
     },
     {
-      title: "Karachi Water & Sewerage Board",
+      title: "Total Parco Mobile Application",
       description:
         "Created water tanker ordering interface with geolocation-based pricing algorithm. Reduced manual booking errors by 40% handling 1,000+ daily orders.",
       image: "/images/project3.jpg",
-      technologies: ["Laravel", "MySQL", "REST APIs"],
-      liveUrl: "https://play.google.com/store/apps/details?id=com.hta.kwsb.ots&hl=en",
+      liveUrl: "https://play.google.com/store/apps/details?id=com.altpay.infini.consumerapp&hl=en",
       githubUrl: "#",
       featured: false,
       period: "2024",
@@ -57,19 +53,16 @@ export function ProjectsSection() {
     {
       title: "Extensia - Volunteer Management System",
       description:
-        "Performed comprehensive end-to-end testing of the application, including UI/UX validation, cross-device responsiveness, and critical subscription workflows (sign-up, payments, renewals), ensuring seamless functionality and accessibility to support Extensia’s mission-driven platform.",
+        "Executed full-cycle QA for Total Parco’s mobile app: validated UI/UX compliance, multi-device responsiveness (phones/tablets), payment/loyalty integrations, and offline-mode robustness to ensure flawless customer transactions",
       image: "/images/project4.jpg",
-      technologies: ["React", "Next.js", "AWS Cognito"],
       liveUrl: "https://extensia.cloud/",
       githubUrl: "#",
       featured: false,
       period: "2025",
     },
   ]
-
   const featuredProjects = projects.filter((project) => project.featured)
   const otherProjects = projects.filter((project) => !project.featured)
-
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,7 +72,6 @@ export function ProjectsSection() {
             A showcase of my recent work, demonstrating various technologies and problem-solving approaches.
           </p>
         </div>
-
         {/* Featured Projects */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {featuredProjects.map((project, index) => (
@@ -115,18 +107,10 @@ export function ProjectsSection() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="text-xs">
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
               </CardContent>
             </Card>
           ))}
         </div>
-
         {/* Other Projects */}
         <div>
           <h3 className="text-2xl font-semibold mb-8 text-center">Other Projects</h3>
@@ -148,20 +132,8 @@ export function ProjectsSection() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-1 mb-4">
-                    {project.technologies.slice(0, 3).map((tech) => (
-                      <Badge key={tech} variant="secondary" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <Badge variant="secondary" className="text-xs">
-                        +{project.technologies.length - 3}
-                      </Badge>
-                    )}
-                  </div>
-                  <div className="flex space-x-2">
-                    <Button size="sm" variant="outline" className="flex-1" asChild>
+                  <div className="flex w-full">
+                    <Button size="sm" variant="outline" className="flex-1 bg-transparent" asChild>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="h-3 w-3 mr-1" />
                         Demo
@@ -172,6 +144,13 @@ export function ProjectsSection() {
               </Card>
             ))}
           </div>
+          {/*  
+          <div className="mt-12 text-center">
+            <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white" asChild>
+              <a href="/all-projects">View All Projects</a>
+            </Button>
+          </div>
+          */}
         </div>
       </div>
     </section>
